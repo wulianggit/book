@@ -29,3 +29,10 @@ Route::get('/', function () {
 Route::group(['middleware' => ['web']], function () {
     //
 });
+
+Route::get('/member', 'MemberController@index');
+Route::resource('member', 'MemberController');
+
+Route::group(['namespace' => 'Service','prefix' => 'service'], function ($route) {
+    $route->get('/sendSMS', 'SendValidateNews@sendSMS');
+});

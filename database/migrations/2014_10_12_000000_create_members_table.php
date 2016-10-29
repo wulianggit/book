@@ -12,7 +12,7 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('members', function (Blueprint $table) {
             $table->increments('id')->comment('用户ID');
             $table->string('nickname',20)->default('')->comment('用户昵称');
             $table->string('mobile',15)->unique()->default('')->comment('用户手机号');
@@ -29,6 +29,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::drop('users');
+        Schema::drop('members');
     }
 }

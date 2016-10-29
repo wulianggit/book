@@ -1,0 +1,28 @@
+request body = <TemplateSMS>
+                    <to>18262397326</to>
+                    <appId>8a48b55149d5792d0149dd63a3c4046d</appId>
+                    <templateId>1</templateId>
+                    <datas><data>1234</data><data>5</data></datas>
+                  </TemplateSMS>
+request url = https://sandboxapp.cloopen.com:8883/2013-12-26/Accounts/aaf98f8949d575140149dd482efa04b5/SMS/TemplateSMS?sig=6E70BFC654D838DB7FDE99ACD071DF82
+request body = <TemplateSMS>
+                    <to>18262397326</to>
+                    <appId>8a48b55149d5792d0149dd63a3c4046d</appId>
+                    <templateId>1</templateId>
+                    <datas><data>1234</data><data>5</data></datas>
+                  </TemplateSMS>
+request url = https://sandboxapp.cloopen.com:8883/2013-12-26/Accounts/aaf98f8949d575140149dd482efa04b5/SMS/TemplateSMS?sig=712BEC91C532A24019407B3B4B6650D1
+request body = <TemplateSMS>
+                    <to>18262397326</to>
+                    <appId>8a48b55149d5792d0149dd63a3c4046d</appId>
+                    <templateId>1</templateId>
+                    <datas><data>1234</data><data>60</data></datas>
+                  </TemplateSMS>
+request url = https://sandboxapp.cloopen.com:8883/2013-12-26/Accounts/aaf98f8949d575140149dd482efa04b5/SMS/TemplateSMS?sig=59EAFCE9C840380C37389CC608F53BFB
+request body = <TemplateSMS>
+                    <to>18262397326</to>
+                    <appId>8a216da85805311d01580faf76fa0607</appId>
+                    <templateId>1</templateId>
+                    <datas><data>1234</data><data>60</data></datas>
+                  </TemplateSMS>
+request url = https://app.cloopen.com:8883/2013-12-26/Accounts/8a216da85805311d01580faf76ab0603/SMS/TemplateSMS?sig=2AD01F83EAA3BC45D1E6D319042F1191
