@@ -32,7 +32,11 @@ Route::group(['middleware' => ['web']], function () {
 
 Route::get('/member', 'MemberController@index');
 Route::resource('member', 'MemberController');
-
+// 发送手机验证码
 Route::group(['namespace' => 'Service','prefix' => 'service'], function ($route) {
     $route->get('/sendSMS', 'SendValidateNews@sendSMS');
 });
+// 手机注册
+Route::post('/registerPhone', 'MemberController@storePhone');
+// 邮箱注册
+Route::post('/registerEmail', 'MemberController@storeEmail');

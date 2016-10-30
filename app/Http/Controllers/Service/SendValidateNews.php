@@ -8,7 +8,7 @@ use App\Http\Requests;
 use App\Http\Requests\SMSRequest;
 use App\Http\Controllers\Controller;
 use App\Tools\SMS\SendTemplateSMS;
-use Illuminate\Support\Facades\Cache;
+use Cache;
 
 class SendValidateNews extends Controller
 {
@@ -26,7 +26,7 @@ class SendValidateNews extends Controller
         $phone = $request->input('phone', '');
         $res   = $obj->sendTemplateSMS($phone, array($code, 60), 1);
         if ($res['status'] == 0) {
-            Cache::add($phone, $code, 60*60);
+            Cache::put($phone, $code, 60);
         }
         return response()->json($res);
     }
