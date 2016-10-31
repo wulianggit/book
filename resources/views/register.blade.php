@@ -304,6 +304,7 @@
                   data.password = password;
                   data.password_confirmation  = confirm;
                   data.phone_code = phone_code;
+                  data._token  = '{{csrf_token()}}';
               } else if(id == 'x12') {
                   email = $('input[name=email]').val();
                   password = $('#passwd_email').val();
@@ -316,12 +317,9 @@
                   data.email = email;
                   data.password = password;
                   data.password_confirmation  = confirm;
-                  data.validate_code = validate_code;
+                  data.captcha = validate_code;
+                  data._token  = '{{csrf_token()}}';
               }
-
-              $.ajaxSetup({
-                  headers: { 'X-CSRF-TOKEN' : '{{ csrf_token() }}' }
-              });
 
               $.ajax({
                   type: "POST",

@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use Cache;
+use Captcha;
+use Session;
 
 class MemberController extends Controller
 {
@@ -47,9 +49,8 @@ class MemberController extends Controller
             return response()->json(['status' => 1, 'message' => '验证码错误!']);
         }
 
-        $member['mobile']   = $mobile;
-        $member['password'] = bcrypt($data['password']);
-        $result = Member::registerPhone($member);
+        // 注册用户
+        $result = Member::registerPhone($data);
 
         if (!$result) {
             return response()->json(['status' => 1, 'message' => '注册失败!']);
@@ -61,12 +62,20 @@ class MemberController extends Controller
     /**
      * 通过邮箱注册为新用户
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\RegisterEmailRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function storeEmail(Request $request)
+    public function storeEmail(Requests\RegisterEmailRequest $request)
     {
-        dd($request->all());
+        $data = $request->all();
+        // 注册用户
+        $result = Member::registerEmail($data);
+
+        if (!$result) {
+            return response()->json(['status' => 1, 'message' => '注册失败!']);
+        }
+
+        return response()->json(['status' => 1, 'message' => '注册成功!']);
     }
 
 }
