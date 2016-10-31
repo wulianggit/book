@@ -33,6 +33,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('/registerPhone', 'MemberController@storePhone');
     // 邮箱注册
     Route::post('/registerEmail', 'MemberController@storeEmail');
+    // 邮箱验证
+    Route::any('/Member/validation', 'MemberController@validatEmail');
 });
 // 发送手机验证码
 Route::group(['namespace' => 'Service','prefix' => 'service'], function ($route) {

@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use App\Events\MemberRegistered;
+use App\Tools\UUID;
 use Illuminate\Database\Eloquent\Model;
 
 class Member extends Model
@@ -21,7 +23,11 @@ class Member extends Model
     /**
      * @var array
      */
-    protected $fillable = ['nickname', 'mobile', 'email','password', 'active'];
+    protected $fillable = [
+        'nickname', 'mobile', 'email',
+        'token', 'password', 'active',
+        'deadline'
+    ];
 
     /**
      * 手机号注册
@@ -41,9 +47,28 @@ class Member extends Model
 
         return true;
     }
-    
-    public function registerEmail (array $data)
+
+    /**
+     * 邮箱注册用户
+     * @param array $data
+     *
+     * @return bool
+     * @author wuliang
+     */
+    public static function registerEmail (array $data)
     {
-        
+        $member['email']    = $data['email'];
+        $member['token']    = UUID::create();
+        $member['deadline'] = date('Y-m-d H:i:s', time() + 60*60*24);
+        $member['password'] = bcrypt($data['password']);
+        $member = static::create($member);
+        if ($member) {
+            // 执行发送邮件事件
+            event(new MemberRegistered($member));
+            return true;
+        }
+
+        return false;
     }
+
 }

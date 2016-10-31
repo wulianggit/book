@@ -78,4 +78,35 @@ class MemberController extends Controller
         return response()->json(['status' => 1, 'message' => '注册成功!']);
     }
 
+    /**
+     * 通过邮箱注册的用户进行验证
+     * @param \App\Http\Requests\ValidateEmailRequest $request
+     *
+     * @return string
+     * @author wuliang
+     */
+    public function validatEmail (Requests\ValidateEmailRequest $request)
+    {
+        $id    = $request->input('id');
+        $token = $request->input('token');
+
+        $member = Member::find($id);
+
+        if (!$member) {
+            return '验证异常';
+        }
+
+        if ($member->token != $token) {
+            return '验证异常';
+        } else {
+            if (time() > strtotime($member->deadline)) {
+                return '该链接已失效';
+            }
+        }
+
+        $member->active = 1;
+        $member->save();
+
+        return redirect('/member');
+    }
 }
