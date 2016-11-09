@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="231ee646-8b14-451e-a119-c5bb0f1ad726" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/menu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/book.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/category/list.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/category.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/product/list.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/Categry.php" afterPath="$PROJECT_DIR$/app/Models/Categry.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/Product.php" afterPath="$PROJECT_DIR$/app/Models/Product.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/book.css" afterPath="$PROJECT_DIR$/public/css/book.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/category/list.blade.php" afterPath="$PROJECT_DIR$/resources/views/category/list.blade.php" />
     </list>
     <ignored path="book.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,10 +37,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="list.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/category/list.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/product/list.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
+            <state relative-caret-position="392">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -96,13 +99,18 @@
         <option value="$PROJECT_DIR$/database/seeds/CategorySeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/CategoryTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/CategoriesTableSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/public/js/book.js" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/public/css/book.css" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" />
+        <option value="$PROJECT_DIR$/public/js/category.js" />
         <option value="$PROJECT_DIR$/resources/views/category/list.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/Product.php" />
+        <option value="$PROJECT_DIR$/database/seeds/ProductTableSeeder.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" />
+        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/resources/views/product/list.blade.php" />
       </list>
     </option>
   </component>
@@ -226,6 +234,28 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="book" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="book" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -294,24 +324,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="book" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="book" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="images" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -331,6 +343,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="book" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="book" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="book" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="book" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seeds" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -632,12 +676,12 @@
       <workItem from="1477734217497" duration="19260000" />
       <workItem from="1477885827644" duration="16094000" />
       <workItem from="1477921838035" duration="4801000" />
-      <workItem from="1478671753333" duration="4463000" />
+      <workItem from="1478671753333" duration="9094000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44618000" />
+    <option name="totallyTimeSpent" value="49249000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -674,41 +718,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/mews/captcha/src/helpers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5380">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/session.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
@@ -985,18 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <marker date="1478673282000" expanded="true" signature="75:292" placeholder="{...}" />
-            <marker date="1478673282000" expanded="true" signature="85:149" placeholder=" Run the database seeds. ..." />
-            <marker date="1478673282000" expanded="true" signature="177:290" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Service/SendValidateNews.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -1113,35 +1110,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+        <state relative-caret-position="420">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
-            <marker date="1478674774000" expanded="true" signature="9:383" placeholder="..." />
-            <marker date="1478674774000" expanded="true" signature="398:446" placeholder="..." />
-            <marker date="1478674774000" expanded="true" signature="416:445" placeholder="..." />
-            <marker date="1478674774000" expanded="true" signature="452:829" placeholder="..." />
-            <marker date="1478674774000" expanded="true" signature="846:1391" placeholder="..." />
-            <marker date="1478674774000" expanded="true" signature="886:1390" placeholder="..." />
-            <marker date="1478674774000" expanded="true" signature="1418:1546" placeholder="..." />
-            <marker date="1478674774000" expanded="true" signature="1487:1545" placeholder="..." />
+            <marker date="1478681189000" expanded="true" signature="44:116" placeholder="..." />
+            <marker date="1478681189000" expanded="true" signature="160:333" placeholder="{...}" />
+            <marker date="1478681189000" expanded="true" signature="195:331" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CategoryController.php">
+    <entry file="file://$PROJECT_DIR$/public/js/category.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        <state relative-caret-position="-28">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <marker date="1478676313000" expanded="true" signature="44:116" placeholder="..." />
-            <marker date="1478676313000" expanded="true" signature="161:824" placeholder="{...}" />
-            <marker date="1478676313000" expanded="true" signature="191:241" placeholder="{...}" />
-            <marker date="1478676313000" expanded="true" signature="250:346" placeholder=" 通过父级ID获取子级分类 ..." />
-            <marker date="1478676313000" expanded="true" signature="392:822" placeholder="{...}" />
-            <marker date="1478676313000" expanded="true" signature="510:641" placeholder="..." />
-            <marker date="1478676313000" expanded="true" signature="649:772" placeholder="..." />
+            <marker date="1478681498000" expanded="true" signature="26:1926" placeholder="{...}" />
+            <marker date="1478681498000" expanded="true" signature="63:201" placeholder="{...}" />
+            <marker date="1478681498000" expanded="true" signature="147:193" placeholder="{...}" />
+            <marker date="1478681498000" expanded="true" signature="231:1870" placeholder="{...}" />
+            <marker date="1478681498000" expanded="true" signature="313:1862" placeholder="{&quot;type&quot;: &quot;GET&quot;...}" />
+            <marker date="1478681498000" expanded="true" signature="478:1680" placeholder="{...}" />
+            <marker date="1478681498000" expanded="true" signature="496:558" placeholder="//..." />
+            <marker date="1478681498000" expanded="true" signature="591:817" placeholder="{...}" />
+            <marker date="1478681498000" expanded="true" signature="854:1084" placeholder="{...}" />
+            <marker date="1478681498000" expanded="true" signature="1188:1666" placeholder="{...}" />
+            <marker date="1478681498000" expanded="true" signature="1730:1852" placeholder="{...}" />
+            <marker date="1478681498000" expanded="true" signature="1882:1924" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1149,7 +1146,101 @@
     <entry file="file://$PROJECT_DIR$/resources/views/category/list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+          <folding>
+            <marker date="1478681605000" expanded="true" signature="50:1086" placeholder="..." />
+            <marker date="1478681605000" expanded="true" signature="163:575" placeholder="..." />
+            <marker date="1478681605000" expanded="true" signature="212:564" placeholder="..." />
+            <marker date="1478681605000" expanded="true" signature="269:548" placeholder="..." />
+            <marker date="1478681605000" expanded="true" signature="330:529" placeholder="..." />
+            <marker date="1478681605000" expanded="true" signature="623:1084" placeholder="..." />
+            <marker date="1478681605000" expanded="true" signature="673:848" placeholder="..." />
+            <marker date="1478681605000" expanded="true" signature="730:786" placeholder="..." />
+            <marker date="1478681605000" expanded="true" signature="898:1073" placeholder="..." />
+            <marker date="1478681605000" expanded="true" signature="955:1011" placeholder="..." />
+            <marker date="1478681605000" expanded="true" signature="1113:1254" placeholder="..." />
+            <marker date="1478681605000" expanded="true" signature="1205:1252" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="48" />
+          <folding>
+            <marker date="1478683003000" expanded="true" signature="98:358" placeholder="{...}" />
+            <marker date="1478683003000" expanded="true" signature="108:145" placeholder=" 关联表名 ..." />
+            <marker date="1478683003000" expanded="true" signature="191:226" placeholder=" 主键 ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/ProductTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding>
+            <marker date="1478683280000" expanded="true" signature="79:779" placeholder="{...}" />
+            <marker date="1478683280000" expanded="true" signature="89:153" placeholder=" Run the database seeds. ..." />
+            <marker date="1478683280000" expanded="true" signature="181:777" placeholder="{...}" />
+            <marker date="1478683280000" expanded="true" signature="224:478" placeholder="..." />
+            <marker date="1478683280000" expanded="true" signature="225:477" placeholder="..." />
+            <marker date="1478683280000" expanded="true" signature="518:769" placeholder="..." />
+            <marker date="1478683280000" expanded="true" signature="519:768" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <marker date="1478680556000" expanded="true" signature="9:383" placeholder="..." />
+            <marker date="1478680556000" expanded="true" signature="398:446" placeholder="..." />
+            <marker date="1478680556000" expanded="true" signature="416:445" placeholder="..." />
+            <marker date="1478680556000" expanded="true" signature="452:829" placeholder="..." />
+            <marker date="1478680556000" expanded="true" signature="846:1457" placeholder="..." />
+            <marker date="1478680556000" expanded="true" signature="886:1456" placeholder="..." />
+            <marker date="1478680556000" expanded="true" signature="1484:1612" placeholder="..." />
+            <marker date="1478680556000" expanded="true" signature="1553:1611" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="13" column="82" selection-start-line="13" selection-start-column="82" selection-end-line="13" selection-end-column="82" />
+          <folding>
+            <marker date="1478683571000" expanded="true" signature="44:116" placeholder="..." />
+            <marker date="1478683571000" expanded="true" signature="161:935" placeholder="{...}" />
+            <marker date="1478683571000" expanded="true" signature="191:352" placeholder="{...}" />
+            <marker date="1478683571000" expanded="true" signature="361:457" placeholder=" 通过父级ID获取子级分类 ..." />
+            <marker date="1478683571000" expanded="true" signature="503:933" placeholder="{...}" />
+            <marker date="1478683571000" expanded="true" signature="621:752" placeholder="..." />
+            <marker date="1478683571000" expanded="true" signature="760:883" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding>
+            <marker date="1478683642000" expanded="true" signature="75:341" placeholder="{...}" />
+            <marker date="1478683642000" expanded="true" signature="85:149" placeholder=" Run the database seeds. ..." />
+            <marker date="1478683642000" expanded="true" signature="177:339" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/product/list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>

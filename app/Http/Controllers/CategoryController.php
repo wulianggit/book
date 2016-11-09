@@ -11,7 +11,8 @@ class CategoryController extends Controller
 {
     public function index()
     {
-        return view('category.list');
+        $categorys = Categry::where('parent_id',0)->orderBy('sort','DESC')->get();
+        return view('category.list')->with(compact('categorys'));
     }
 
     /**

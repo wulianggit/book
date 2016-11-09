@@ -40,6 +40,8 @@ Route::group(['middleware' => ['web']], function () {
     // 书籍类别
     Route::get('/category', 'CategoryController@index');
     Route::get('/category/pid/{pid}', 'CategoryController@getCategoryByPid');
+
+    Route::get('/product/cid/{cid}', 'ProductController@index');
 });
 // 发送手机验证码
 Route::group(['namespace' => 'Service','prefix' => 'service'], function ($route) {
