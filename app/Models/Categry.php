@@ -17,4 +17,6 @@ class Categry extends Model
      * @var string
      */
     protected $primaryKey = 'id';
+    
+    protected $fillable = ['parent_id', 'name', 'sort', 'preview'];
 }

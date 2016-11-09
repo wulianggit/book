@@ -27,6 +27,7 @@ Route::get('/', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
+    // 用户登录
     Route::get('/member', 'MemberController@index');
     Route::resource('member', 'MemberController');
     // 手机注册
@@ -35,6 +36,10 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('/registerEmail', 'MemberController@storeEmail');
     // 邮箱验证
     Route::any('/Member/validation', 'MemberController@validatEmail');
+
+    // 书籍类别
+    Route::get('/category', 'CategoryController@index');
+    Route::get('/category/pid/{pid}', 'CategoryController@getCategoryByPid');
 });
 // 发送手机验证码
 Route::group(['namespace' => 'Service','prefix' => 'service'], function ($route) {
