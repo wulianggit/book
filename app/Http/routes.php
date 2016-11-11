@@ -40,8 +40,13 @@ Route::group(['middleware' => ['web']], function () {
     // 书籍类别
     Route::get('/category', 'CategoryController@index');
     Route::get('/category/pid/{pid}', 'CategoryController@getCategoryByPid');
-
+    // 书籍列表
     Route::get('/product/cid/{cid}', 'ProductController@index');
+    // 书籍详情
+    Route::get('/product/{id}', 'ProductController@show');
+    
+    // 购物车增 删 查
+    Route::resource('cart', 'CartController');
 });
 // 发送手机验证码
 Route::group(['namespace' => 'Service','prefix' => 'service'], function ($route) {

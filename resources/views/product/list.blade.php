@@ -5,7 +5,7 @@
 @section('content')
     <div class="weui_cells weui_cells_access">
         @foreach($products as $product)
-        <a class="weui_cell" href="">
+        <a class="weui_cell" href="{{url('/product/'.$product->id)}}">
             <div class="weui_cell_hd"><img class="bk_preview" src="{{asset("$product->preview")}}"></div>
             <div class="weui_cell_bd weui_cell_primary">
                 <div style="margin-bottom: 10px;">
