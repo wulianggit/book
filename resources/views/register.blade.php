@@ -344,6 +344,7 @@
                       $('.bk_toptips').show();
                       $('.bk_toptips span').html('注册成功');
                       setTimeout(function() {$('.bk_toptips').hide();}, 2000);
+                      location.href = '/member/login';
                   },
                   error: function(xhr) {
                       var res = $.parseJSON(xhr.responseText);

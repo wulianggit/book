@@ -30,6 +30,8 @@ Route::group(['middleware' => ['web']], function () {
     // 用户登录
     Route::get('/member', 'MemberController@index');
     Route::resource('member', 'MemberController');
+    Route::post('/member/login', 'MemberController@login');
+
     // 手机注册
     Route::post('/registerPhone', 'MemberController@storePhone');
     // 邮箱注册
