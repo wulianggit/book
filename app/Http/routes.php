@@ -48,7 +48,11 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/product/{id}', 'ProductController@show');
     
     // 购物车增 删 查
+    Route::get('/cart/destory', 'CartController@destory');
     Route::resource('cart', 'CartController');
+
+    // 结算订单
+    Route::match(['get','post'],'/orderCommit', 'OrderController@commit')->middleware(['check.login']);
 });
 // 发送手机验证码
 Route::group(['namespace' => 'Service','prefix' => 'service'], function ($route) {

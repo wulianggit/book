@@ -15,12 +15,15 @@ class MemberController extends Controller
 {
     /**
      * Display a listing of the resource.
+     * @param \Illuminate\Http\Request $request
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view ('login');
+        $returnUrl = $request->get('return_url');
+        $returnUrl = urldecode($returnUrl);
+        return view ('login')->with(compact('returnUrl'));
     }
 
     /**
